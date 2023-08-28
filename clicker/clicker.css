@@ -1,0 +1,145 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background: repeating-linear-gradient(90deg, rgba(0,145,174) 0, rgb(1, 159, 191) 20px, rgba(0,145,174) 40px);
+    user-select: none;
+}
+.page {
+    height: 80vh;
+}
+#clickPage {
+    display: grid;
+    grid-template-rows: 10vh 80vh;
+    -webkit-tap-highlight-color: transparent;
+}
+#clickPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#storePage {
+    display: none;
+    overflow-y: scroll;
+}
+#storePage > div {
+    background: linear-gradient(0deg, rgb(116, 116, 116) 0%, rgb(185, 185, 185) 100%);
+    height: 6vh;
+    padding: 1vh;
+    border: solid rgb(80, 80, 80) .4vh;
+    margin-bottom: 1vh;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    overflow: hidden;
+}
+#storePage > div > img {
+    height: 6vh;
+    background-color: rgba(255, 255, 255, .4);
+    border: solid rgb(86, 86, 86) .4vh;
+    border-radius: 1vh;
+}
+#storePage > div > div {
+    font-family: kavoon;
+    font-size: 2.3vh;
+}
+#storePage > div > div > span {
+    font-size: 1.5vh;
+}
+#storePage > div > button {
+    display: flex;
+    justify-content: center;
+    font-family: kavoon;
+    font-size: 2vh;
+}
+#miscPage {
+    height: 70vh;
+    display: none;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 10vh;
+    padding: 10vh 10vw 0 10vw;
+}
+#miscPage > div {
+    background-color: rgb(146, 130, 130);
+    border: solid rgb(93, 89, 89);
+    padding: 1vh;
+    font-family: kavoon;
+    font-size: 2vh;
+    margin-right: 3vw;
+}
+#miscPage > button {
+    background-color: brown;
+    border: solid rgb(107, 28, 28);
+    padding: 1vh;
+    font-family: kavoon;
+    font-size: 2vh;
+    margin-left: 3vw;
+}
+#miscPage > button:hover {
+    background-color: rgb(138, 39, 39);
+}
+#miscPage > button:active {
+    background-color: rgb(119, 31, 31);
+}
+@font-face {
+    font-family: kavoon;
+    src: url(assets/Kavoon-Regular.ttf);
+}
+.upperbound {
+    height: 9.2vh;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 5.5vh 2.3vh;
+    padding: .4vh;
+    background-color: rgba(0, 0, 0, .3);
+    font-family: kavoon;
+    color: rgb(224, 224, 224);
+}
+.lowerbound {
+    height: 10vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    background: linear-gradient(0deg, rgba(116,116,116,1) 0%, rgba(185,185,185,1) 100%);
+}
+#cookieAmount {
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+}
+#cps {
+    display: flex;
+    justify-content: center;
+    font-size: 2.3vh;
+}
+#cookieClick {
+    height: 20vh;
+    width: 20vh;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    filter: drop-shadow(.8vh .8vh .4ex rgba(0, 0, 0, .4));
+}
+#cookieClick:active {
+    transform: scale(0.9);
+}
+.lowerbound > button {
+    display: grid;
+    justify-content: center;
+    filter: grayscale();
+    font-family: kavoon;
+    font-size: 1.7vh;
+    margin: .5vh;
+}
+.lowerbound > button > img {
+    height: 5.3vh;
+}
+@media (min-width:961px) {
+    .lowerbound > button > img {
+        height: 6vh;
+    }
+}

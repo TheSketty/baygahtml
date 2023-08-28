@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker Remake</title>
+    <script src="clicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="clicker.css">
+</head>
+<body onload="loadPage()">
+    <div class="upperbound">
+        <span id="cookieAmount"></span>
+        <span id="cps"></span>
+    </div>
+    <div id="clickPage" class="page">
+        <button id="cookieClick" onclick="cookieplus()">
+            <img draggable="false" src="assets/cookie.png" width="100%">
+        </button>
+    </div>
+    <div id="storePage" class="page">
+        <div>
+            <img draggable="false" src="assets/cursor.png">
+            <div>Cursor<br><span>+0.1 cookies per second</span></div>
+            <button onclick="cpsplus(10, 0.1)">Buy<br>10</button>
+        </div>
+        <div>
+            <img draggable="false" src="assets/grandma.png">
+            <div>Grandma<br><span>+1 cookies per second</span></div>
+            <button onclick="cpsplus(100, 1)">Buy<br>100</button>
+        </div>
+        <div>
+            <img draggable="false" src="assets/farm.png">
+            <div>Farm<br><span>+10 cookies per second</span></div>
+            <button onclick="cpsplus(800, 10)">Buy<br>800</button>
+        </div>
+        <div>
+            <img draggable="false" src="assets/mine.png">
+            <div>Mine<br><span>+50 cookies per second</span></div>
+            <button onclick="cpsplus(3000, 50)">Buy<br>3000</button>
+        </div>
+        <div>
+            <img draggable="false" src="assets/factory.png">
+            <div>Factory<br><span>+300 cookies per second</span></div>
+            <button onclick="cpsplus(15000, 300)">Buy<br>15000</button>
+        </div>
+        <div>
+            <img draggable="false" src="assets/bank.png">
+            <div>Bank<br><span>+1600 cookies per second</span></div>
+            <button onclick="cpsplus(50000, 1600)">Buy<br>50000</button>
+        </div>
+    </div>
+    <div id="miscPage" class="page">
+        <div>
+            Version: v1.0
+        </div>
+        <button onclick="reset()">Reset Progress</button>
+    </div>
+    <div class="lowerbound">
+        <button id="clickPageButton" onclick="clickPage()"><img draggable="false" src="assets/cookie.png">Cookie</button>
+        <button id="storePageButton" onclick="storePage()"><img draggable="false" src="assets/store.png">Store</button>
+        <button id="miscPageButton" onclick="miscPage()"><img draggable="false" src="assets/misc.png">Misc</button>
+    </div>
+</body>
+</html>
