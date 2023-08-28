@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    font-family: intro;
+    font-size: 7vw;
+}
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, .8);
+}
+@font-face {
+    font-family: intro;
+    src: url(main/intro.otf);
+}
