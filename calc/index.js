@@ -1,8 +1,8 @@
-var audio1 = new Audio("stuff/key1.mp3");
+var audio1 = new Audio("assets/key1.mp3");
 audio1.volume = 0.1;
-var audio2 = new Audio("stuff/key2.mp3");
+var audio2 = new Audio("assets/key2.mp3");
 audio2.volume = 0.4;
-var audio3 = new Audio("stuff/key3.mp3");
+var audio3 = new Audio("assets/key3.mp3");
 audio3.volume = 0.4;
 function playsound() {
     var audio = eval("audio" + Math.floor(Math.random() * 3 + 1));

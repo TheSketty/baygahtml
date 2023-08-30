@@ -55,11 +55,11 @@ div:has(.buttons) {
 }
 @font-face {
     font-family: intro;
-    src: url(stuff/intro_bold.otf);
+    src: url(assets/intro_bold.otf);
 }
 @font-face {
     font-family: consolas;
-    src: url(stuff/consolas.ttf);
+    src: url(assets/consolas.ttf);
 }
 .buttons > button {
     border-radius: 2.5vh;
