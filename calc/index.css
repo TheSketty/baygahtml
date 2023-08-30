@@ -84,10 +84,13 @@ div:has(.buttons) {
 #equal {
     --alpha: .8;
 }
-.buttons > button:hover {
-    transition: all 0.2s;
-    background-color: rgba(192, 192, 192, var(--alpha));
+@media (min-width:961px) {
+    .buttons > button:hover {
+        transition: all 0.2s;
+        background-color: rgba(192, 192, 192, var(--alpha));
+    }
 }
+
 .buttons > button:active {
     transform: scale(0.95, 0.95);
     box-shadow: 0em 0ex rgba(0, 0, 0, 0.6);
