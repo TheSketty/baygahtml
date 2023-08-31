@@ -1,0 +1,16 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(85, 51, 117);
+    justify-content: center;
+    align-items: center;
+}
+#gameScreen {
+    background-color: white;
+}
+#controls {
+    background-color: black;
+}
